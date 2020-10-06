@@ -26,11 +26,11 @@ class MyFirstFutureTest extends TestCase
         //$response->assertStatus(200);
         //$response->assertSee("don&#039;t divide by zero");
 
-        $this->browse(function (Browser $browser) {
+       /* $this->browse(function (Browser $browser) {
 
             $browser->visit('https://www.google.com/')//
                     ->assertSee('Checkout a few new products from Google');//Google có các thứ tiếng//Google offered in: //Laravel //assert 03
-        });  
+        });  */
     }
 
 }
