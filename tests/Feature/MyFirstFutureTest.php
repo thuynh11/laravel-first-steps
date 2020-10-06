@@ -22,8 +22,8 @@ class MyFirstFutureTest extends TestCase
             "b" => "0",
             "action" => "/",
         );
-        $response = $this->post('/calc', $array);
-        $response->assertStatus(200);
+      //  $response = $this->post('/calc', $array);
+        //$response->assertStatus(200);
         //$response->assertSee("don&#039;t divide by zero");
 
         $this->browse(function (Browser $browser) {
