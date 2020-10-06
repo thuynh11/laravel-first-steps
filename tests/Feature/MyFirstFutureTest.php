@@ -24,7 +24,13 @@ class MyFirstFutureTest extends TestCase
         );
         $response = $this->post('/calc', $array);
         $response->assertStatus(200);
-        $response->assertSee("don&#039;t divide by zero");
+        //$response->assertSee("don&#039;t divide by zero");
+
+        $this->browse(function (Browser $browser) {
+
+            $browser->visit('https://www.google.com/')//
+                    ->assertSee('Check out a few new products from Google');//Google có các thứ tiếng//Google offered in: //Laravel //assert 03
+        });  
     }
 
 }
